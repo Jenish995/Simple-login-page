@@ -1,1 +1,124 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(infinite-castle.jpg   );
+    background-repeat: no-repeat;            /* Prevents tiling */
+    background-size: cover;                  /* Cover the entire screen */
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#div-1 {
+    background:transparent;
+    border: 3px solid;
+    padding: 60px 50px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Form Styles */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #010000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+
+/* Container for the links */
+.links-container {
+    display: flex;
+    justify-content: space-between;/* Space out links */
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Link Styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Button Styles */
+button {
+    width: 50%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* space for icon on the right */
+    border: 2px solid #2a2929;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.input-container i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    #div-1 {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
 
